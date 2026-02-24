@@ -1,12 +1,13 @@
 import { Outlet, createRootRoute } from '@tanstack/react-router'
-import { AppShell, Box, Burger, Container, Group, Title, Stack, RemoveScroll, Divider } from '@mantine/core'
+import { AppShell, Box, Burger, Container, Group, Title, Stack, Divider } from '@mantine/core'
 import Link from '@/components/ui/link/Link'
 import NavLink from '@/components/ui/nav-link/NavLink'
 import ColorSchemeToggleButton from '@/components/ui/color-scheme-toggle-button/ColorSchemeToggleButton'
 import { LanguagePicker } from '@/components/ui/languague-picker/LanguagePicker'
-import { useDisclosure } from '@mantine/hooks'
+import { useDisclosure, useMediaQuery } from '@mantine/hooks'
 import LinkedinButton from '@/components/ui/linkedin-button/LinkedinButton'
 import GithubButton from '@/components/ui/github-button/GithubButton'
+import { useEffect } from 'react'
 
 export const Route = createRootRoute({
   component: RootComponent,
@@ -14,6 +15,18 @@ export const Route = createRootRoute({
 
 function RootComponent() {
   const [opened, { toggle }] = useDisclosure();
+  const isMobile = useMediaQuery('(max-width: 576px)');
+
+  useEffect(() => {
+    if (opened && isMobile) {
+      document.documentElement.style.overflow = 'hidden';
+    } else {
+      document.documentElement.style.overflow = '';
+    }
+    return () => {
+      document.documentElement.style.overflow = '';
+    };
+  }, [opened, isMobile]);
 
   return (
     <AppShell
@@ -69,17 +82,14 @@ function RootComponent() {
         </AppShell.Section>
       </AppShell.Navbar>
 
-      <RemoveScroll enabled={opened}>
-        <AppShell.Main
-        >
-          <Outlet />
-          <Box component="footer" py="sm">
-            <Container>
-              F
-            </Container>
-          </Box>
-        </AppShell.Main>
-      </RemoveScroll>
+      <AppShell.Main>
+        <Outlet />
+        <Box component="footer" py="sm">
+          <Container>
+            F
+          </Container>
+        </Box>
+      </AppShell.Main>
     </AppShell >
   )
 }
