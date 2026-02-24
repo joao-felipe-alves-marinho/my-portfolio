@@ -17,7 +17,7 @@ declare module '@tanstack/react-router' {
 export default function App() {
 
   return (
-    <MantineProvider withStaticClasses={false}>
+    <MantineProvider withStaticClasses={false} theme={{ primaryColor: 'violet' }}>
       <RouterProvider router={router} />
     </MantineProvider>
   )
