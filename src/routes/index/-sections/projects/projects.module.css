@@ -1,0 +1,20 @@
+.projectCard {
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+
+  &:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+  }
+}
+
+.shortDescription {
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .projectCard {
+    width: 100%;
+  }
+}

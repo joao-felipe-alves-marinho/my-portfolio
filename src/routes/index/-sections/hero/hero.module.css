@@ -1,0 +1,13 @@
+.title {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.1;
+  font-weight: 900;
+}
+
+.description {
+  font-size: clamp(1rem, 2vw, 1.125rem);
+}
+
+.ctaButton {
+  vertical-align: unset;
+}
