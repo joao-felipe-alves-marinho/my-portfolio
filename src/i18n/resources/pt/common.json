@@ -1,0 +1,80 @@
+{
+  "header": {
+    "home": "João Felipe",
+    "aboutMe": "Sobre Mim",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "Desenvolvedor Full Stack",
+    "description": "Crio aplicações completas, da modelagem de dados à interface, com foco em organização, testes automatizados e integração entre serviços.",
+    "ctaProjects": "Explorar projetos",
+    "ctaContact": "Entrar em contato"
+  },
+  "about": {
+    "title": "Sobre Mim",
+    "paragraph1": "Trabalho no desenvolvimento de aplicações web completas, da modelagem de dados à interface, com foco em organização, testes automatizados e documentação desde o início.",
+    "paragraph2": "Durante minha formação em Análise e Desenvolvimento de Sistemas, aprofundei o interesse por arquitetura e integração entre serviços, direcionando meu foco para sistemas que crescem com consistência.",
+    "paragraph3": "Meu objetivo é construir software que permaneça claro e sustentável ao longo do tempo, evitando soluções improvisadas de curto prazo."
+  },
+  "projects": {
+    "title": "Projetos em Destaque",
+    "viewProject": "Ver projeto",
+    "code": "Código",
+    "viewAll": "Ver todos os projetos",
+    "allProjectsTitle": "Todos os Projetos",
+    "back": "← Voltar aos projetos",
+    "backToList": "Voltar à lista de projetos",
+    "notFound": "Projeto não encontrado",
+    "notFoundDescription": "O projeto que você está procurando não existe.",
+    "overview": "Visão Geral",
+    "technologies": "Tecnologias",
+    "links": "Links",
+    "viewLive": "Visualizar Projeto",
+    "viewCodeOnGithub": "Ver Código no GitHub"
+  },
+  "technologies": {
+    "title": "Tecnologias",
+    "description": "Domínio técnico organizado por áreas para projetar, construir e evoluir sistemas de forma consistente.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "data": "Dados",
+    "quality": "Qualidade",
+    "devops": "DevOps",
+    "itemArchitecture": "Arquitetura de componentes",
+    "itemUiLibraries": "Bibliotecas de UI (Mantine, MUI)",
+    "itemI18n": "Internacionalização (i18next)",
+    "itemRestApi": "APIs REST",
+    "itemDataModeling": "Modelagem de banco de dados",
+    "itemAutomatedTests": "Testes automatizados (Pytest)",
+    "itemCodeOrganization": "Organização de código",
+    "itemAutoDocs": "Documentação automática"
+  },
+  "contact": {
+    "title": "Contato",
+    "description": "Pronto para conversar? Escolha sua forma preferida de contato abaixo.",
+    "emailButton": "Enviar Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "© 2026 João Felipe Alves Marinho",
+    "rightsShort": "© 2026 João Felipe",
+    "ariaGithub": "GitHub",
+    "ariaLinkedin": "LinkedIn"
+  },
+  "navbar": {
+    "aboutMe": "Sobre Mim",
+    "projects": "Projetos",
+    "contact": "Contato"
+  },
+  "language": {
+    "english": "English",
+    "portuguese": "Português",
+    "spanish": "Español"
+  },
+  "accessibility": {
+    "toggleTheme": "Alternar esquema de cores",
+    "toggleMenu": "Alternar menu"
+  }
+}

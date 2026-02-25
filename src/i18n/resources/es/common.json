@@ -1,0 +1,80 @@
+{
+  "header": {
+    "home": "João Felipe",
+    "aboutMe": "Sobre Mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Desarrollador Full Stack",
+    "description": "Creo aplicaciones completas, desde el modelado de datos hasta la interfaz, con enfoque en organización, pruebas automatizadas e integración entre servicios.",
+    "ctaProjects": "Explorar proyectos",
+    "ctaContact": "Ponerse en contacto"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "paragraph1": "Trabajo en el desarrollo de aplicaciones web completas, desde el modelado de datos hasta la interfaz, con enfoque en organización, pruebas automatizadas y documentación desde el inicio.",
+    "paragraph2": "Durante mi formación en Análisis y Desarrollo de Sistemas, profundicé el interés por arquitectura e integración entre servicios, orientando mi enfoque hacia sistemas que crecen con consistencia.",
+    "paragraph3": "Mi objetivo es construir software que permanezca claro y sostenible a lo largo del tiempo, evitando soluciones improvisadas a corto plazo."
+  },
+  "projects": {
+    "title": "Proyectos Destacados",
+    "viewProject": "Ver proyecto",
+    "code": "Código",
+    "viewAll": "Ver todos los proyectos",
+    "allProjectsTitle": "Todos los Proyectos",
+    "back": "← Volver a proyectos",
+    "backToList": "Volver a la lista de proyectos",
+    "notFound": "Proyecto no encontrado",
+    "notFoundDescription": "El proyecto que estás buscando no existe.",
+    "overview": "Visión general",
+    "technologies": "Tecnologías",
+    "links": "Enlaces",
+    "viewLive": "Ver proyecto",
+    "viewCodeOnGithub": "Ver código en GitHub"
+  },
+  "technologies": {
+    "title": "Tecnologías",
+    "description": "Dominio técnico organizado por áreas para diseñar, construir y evolucionar sistemas de forma consistente.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "data": "Datos",
+    "quality": "Calidad",
+    "devops": "DevOps",
+    "itemArchitecture": "Arquitectura de componentes",
+    "itemUiLibraries": "Bibliotecas de UI (Mantine, MUI)",
+    "itemI18n": "Internacionalización (i18next)",
+    "itemRestApi": "APIs REST",
+    "itemDataModeling": "Modelado de base de datos",
+    "itemAutomatedTests": "Pruebas automatizadas (Pytest)",
+    "itemCodeOrganization": "Organización de código",
+    "itemAutoDocs": "Documentación automática"
+  },
+  "contact": {
+    "title": "Contacto",
+    "description": "¿Listo para conversar? Elige tu forma preferida de contacto abajo.",
+    "emailButton": "Enviar correo",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "© 2026 João Felipe Alves Marinho",
+    "rightsShort": "© 2026 João Felipe",
+    "ariaGithub": "GitHub",
+    "ariaLinkedin": "LinkedIn"
+  },
+  "navbar": {
+    "aboutMe": "Sobre Mí",
+    "projects": "Proyectos",
+    "contact": "Contacto"
+  },
+  "language": {
+    "english": "English",
+    "portuguese": "Português",
+    "spanish": "Español"
+  },
+  "accessibility": {
+    "toggleTheme": "Alternar esquema de colores",
+    "toggleMenu": "Alternar menú"
+  }
+}

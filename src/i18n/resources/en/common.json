@@ -1,0 +1,80 @@
+{
+  "header": {
+    "home": "João Felipe",
+    "aboutMe": "About Me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Full Stack Developer",
+    "description": "I build complete applications, from data modeling to interface, with focus on organization, automated testing, and service integration.",
+    "ctaProjects": "Explore Projects",
+    "ctaContact": "Get in Touch"
+  },
+  "about": {
+    "title": "About Me",
+    "paragraph1": "I work on developing complete web applications, from data modeling to the interface, with emphasis on organization, automated testing, and documentation from the start.",
+    "paragraph2": "During my studies in Systems Analysis and Development, I deepened my interest in architecture and service integration, directing my focus toward systems that grow with consistency.",
+    "paragraph3": "My goal is to build software that remains clear and sustainable over time, avoiding short-term improvised solutions."
+  },
+  "projects": {
+    "title": "Featured Projects",
+    "viewProject": "View Project",
+    "code": "Code",
+    "viewAll": "View All Projects",
+    "allProjectsTitle": "All Projects",
+    "back": "← Back to Projects",
+    "backToList": "Back to projects list",
+    "notFound": "Project Not Found",
+    "notFoundDescription": "The project you're looking for doesn't exist.",
+    "overview": "Overview",
+    "technologies": "Technologies",
+    "links": "Links",
+    "viewLive": "View Project",
+    "viewCodeOnGithub": "View Code on GitHub"
+  },
+  "technologies": {
+    "title": "Technologies",
+    "description": "Technical expertise organized by areas to design, build, and evolve systems consistently.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "data": "Data",
+    "quality": "Quality",
+    "devops": "DevOps",
+    "itemArchitecture": "Component architecture",
+    "itemUiLibraries": "UI libraries (Mantine, MUI)",
+    "itemI18n": "Internationalization (i18next)",
+    "itemRestApi": "REST APIs",
+    "itemDataModeling": "Database modeling",
+    "itemAutomatedTests": "Automated tests (Pytest)",
+    "itemCodeOrganization": "Code organization",
+    "itemAutoDocs": "Automatic documentation"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Ready to chat? Choose your preferred way to contact below.",
+    "emailButton": "Send Email",
+    "linkedin": "LinkedIn",
+    "github": "GitHub"
+  },
+  "footer": {
+    "rights": "© 2026 João Felipe Alves Marinho",
+    "rightsShort": "© 2026 João Felipe",
+    "ariaGithub": "GitHub",
+    "ariaLinkedin": "LinkedIn"
+  },
+  "navbar": {
+    "aboutMe": "About Me",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "language": {
+    "english": "English",
+    "portuguese": "Português",
+    "spanish": "Español"
+  },
+  "accessibility": {
+    "toggleTheme": "Toggle color scheme",
+    "toggleMenu": "Toggle menu"
+  }
+}
