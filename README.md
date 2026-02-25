@@ -2,6 +2,8 @@
 
 Portfolio pessoal de desenvolvedor full stack construído com foco em organização de código, acessibilidade, tipagem forte e estrutura escalável.
 
+Demo: https://joaofmarinho.vercel.app/
+
 ## ✨ Funcionalidades
 
 - Navegação por seções na home (Hero, Sobre, Projetos, Tecnologias, Contato)
