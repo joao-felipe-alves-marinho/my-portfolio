@@ -6,13 +6,15 @@ import ptCommon from "./resources/pt/common.json";
 import enCommon from "./resources/en/common.json";
 import esCommon from "./resources/es/common.json";
 
+const i18nDebugEnabled = import.meta.env.VITE_I18N_DEBUG === "true";
+
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     fallbackLng: "pt-BR",
-    debug: false,
+    debug: i18nDebugEnabled,
     ns: ["common"],
     defaultNS: "common",
     interpolation: {

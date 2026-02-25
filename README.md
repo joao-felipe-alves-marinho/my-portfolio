@@ -1,75 +1,103 @@
-# React + TypeScript + Vite
+# Portfolio Full Stack
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Portfolio pessoal de desenvolvedor full stack construído com foco em organização de código, acessibilidade, tipagem forte e estrutura escalável.
 
-Currently, two official plugins are available:
+## ✨ Funcionalidades
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Navegação por seções na home (Hero, Sobre, Projetos, Tecnologias, Contato)
+- Páginas dinâmicas de projetos em `/projects/$slug`
+- Alternância de tema dark/light
+- Internacionalização com i18next
+- Layout responsivo para mobile e desktop
+- Acessibilidade básica (labels, navegação e semântica)
 
-## React Compiler
+## 🧱 Tecnologias
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### Frontend
 
-Note: This will impact Vite dev & build performances.
+- React
+- TypeScript
+- Vite
 
-## Expanding the ESLint configuration
+### Roteamento
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- TanStack Router (file-based routing)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### Estilo/UI
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Mantine UI
+- CSS Modules
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Internacionalização
+
+- i18next
+- react-i18next
+
+### Ferramentas
+
+- ESLint
+- PostCSS
+
+## 📁 Estrutura de pastas
+
+```text
+src/
+  components/
+    layout/
+    ui/
+  data/
+  i18n/
+    index.ts
+    resources/
+      pt/
+        common.json
+      en/
+        common.json
+  routes/
+    __root.tsx
+    index/
+      route.tsx
+      -sections/
+        hero/
+        about-me/
+        projects/
+        technologies/
+        contact/
+    projects/
+      route.tsx
+      $slug/
+        route.tsx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Observações sobre `routes` e `-sections`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- A pasta `routes` define as rotas por convenção de arquivos do TanStack Router.
+- O diretório `-sections` dentro da rota da home segue colocation: componentes relacionados à rota ficam próximos da rota, mas o prefixo `-` evita geração automática de rota para esses arquivos.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🚀 Rodando localmente
+
+```bash
+git clone <url-do-repositorio>
+cd protifolio
+npm install
+npm run dev
 ```
+
+Aplicação disponível em `http://localhost:5173`.
+
+## 🌍 Internacionalização
+
+- A internacionalização usa namespace `common`.
+- Arquivos de tradução ficam em `src/i18n/resources/<idioma>/common.json`.
+- A troca de idioma é feita pelo componente `LanguagePicker`.
+- O idioma é detectado automaticamente e persistido em `localStorage`.
+
+## 🎨 Tema
+
+- O tema (dark/light) é gerenciado pelo Mantine.
+- A alternância é feita por um botão dedicado na interface.
+- Tokens de tema e componentes do Mantine garantem consistência visual entre as telas.
+
+## 📄 Licença
+
+MIT
