@@ -7,11 +7,10 @@ import brasilFlagUrl from '@/assets/flags/brasil-flag.png';
 import USAFlagUrl from '@/assets/flags/usa-flag.png';
 import MexicoFlagUrl from '@/assets/flags/mexico-flag.png';
 
-
 const data = [
-  { label: 'English', image: USAFlagUrl, lang: 'en' },
-  { label: 'Português', image: brasilFlagUrl, lang: 'pt' },
-  { label: 'Español', image: MexicoFlagUrl, lang: 'es' },
+  { image: USAFlagUrl, lang: 'en', labelKey: 'language.english' },
+  { image: brasilFlagUrl, lang: 'pt', labelKey: 'language.portuguese' },
+  { image: MexicoFlagUrl, lang: 'es', labelKey: 'language.spanish' },
 ];
 
 function getDefaultItem(language: string) {
@@ -19,16 +18,16 @@ function getDefaultItem(language: string) {
 }
 
 export function LanguagePicker() {
-  const { i18n } = useTranslation();
+  const { i18n, t } = useTranslation('common');
   const [opened, setOpened] = useState(false);
   const selected = getDefaultItem(i18n.language);
   const items = data.map((item) => (
     <Menu.Item
       leftSection={<Image src={item.image} width={16} height={16} alt="" />}
       onClick={() => { void i18n.changeLanguage(item.lang); }}
-      key={item.label}
+      key={item.lang}
     >
-      {item.label}
+      {t(item.labelKey)}
     </Menu.Item>
   ));
 
@@ -43,8 +42,8 @@ export function LanguagePicker() {
       <Menu.Target>
         <UnstyledButton className={classes.control} data-expanded={opened || undefined}>
           <Group gap="xs">
-            <Image src={selected.image} w={16} h={16} alt={selected.label} />
-            <span className={classes.label}>{selected.label}</span>
+            <Image src={selected.image} w={16} h={16} alt={t(selected.labelKey)} />
+            <span className={classes.label}>{t(selected.labelKey)}</span>
           </Group>
           <FaChevronDown size={12} className={classes.icon} />
         </UnstyledButton>

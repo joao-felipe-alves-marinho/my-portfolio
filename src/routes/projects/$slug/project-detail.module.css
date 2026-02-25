@@ -1,0 +1,31 @@
+.heroImage {
+  width: 100%;
+  border-radius: var(--mantine-radius-md);
+  overflow: hidden;
+  margin: 2rem 0;
+}
+
+.shortDescription {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-style: italic;
+}
+
+.descriptionBox {
+  background: var(--mantine-color-gray-0);
+  border-radius: var(--mantine-radius-md);
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .descriptionBox {
+    background: var(--mantine-color-dark-8);
+  }
+}
+
+@media (max-width: 768px) {
+  .descriptionBox {
+    padding: 1.5rem;
+  }
+}

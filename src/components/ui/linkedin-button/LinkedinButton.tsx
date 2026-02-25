@@ -1,7 +1,10 @@
 import { ActionIcon } from '@mantine/core';
 import { FaLinkedin } from 'react-icons/fa6';
+import { useTranslation } from 'react-i18next';
 
 function LinkedinButton() {
+  const { t } = useTranslation('common');
+
   return (
     <ActionIcon
       component="a"
@@ -11,7 +14,7 @@ function LinkedinButton() {
       variant="default"
       size="lg"
       radius="md"
-      aria-label="LinkedIn"
+      aria-label={t('footer.ariaLinkedin')}
     >
       <FaLinkedin size={16} />
     </ActionIcon>
