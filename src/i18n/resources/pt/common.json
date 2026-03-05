@@ -75,6 +75,9 @@
   },
   "accessibility": {
     "toggleTheme": "Alternar esquema de cores",
-    "toggleMenu": "Alternar menu"
+    "toggleMenu": "Alternar menu",
+    "skipToMain": "Pular para o conteúdo principal",
+    "primaryNavigation": "Navegação principal",
+    "mobileNavigation": "Navegação móvel"
   }
 }

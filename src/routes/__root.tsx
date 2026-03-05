@@ -5,12 +5,15 @@ import { SiteNavbar } from '@/components/layout/navbar'
 import { SiteFooter } from '@/components/layout/footer'
 import { useDisclosure, useMediaQuery } from '@mantine/hooks'
 import { useEffect } from 'react'
+import { useTranslation } from 'react-i18next'
+import classes from './root.module.css'
 
 export const Route = createRootRoute({
   component: RootComponent,
 })
 
 function RootComponent() {
+  const { t } = useTranslation('common')
   const [opened, { toggle }] = useDisclosure()
   const isMobile = useMediaQuery('(max-width: 576px)')
 
@@ -31,15 +34,19 @@ function RootComponent() {
       navbar={{ width: 300, breakpoint: 'sm', collapsed: { desktop: true, mobile: !opened } }}
       padding={0}
     >
+      <a href="#maincontent" className={classes.skipLink}>
+        {t('accessibility.skipToMain')}
+      </a>
+
       <AppShell.Header>
         <SiteHeader opened={opened} onToggle={toggle} />
       </AppShell.Header>
 
-      <AppShell.Navbar py="md" px={16}>
+      <AppShell.Navbar py="md" px={16} component="nav" aria-label={t('accessibility.mobileNavigation')}>
         <SiteNavbar onNavClick={toggle} />
       </AppShell.Navbar>
 
-      <AppShell.Main>
+      <AppShell.Main id="maincontent" tabIndex={-1}>
         <Outlet />
         <SiteFooter />
       </AppShell.Main>

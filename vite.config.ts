@@ -20,22 +20,6 @@ export default defineConfig({
             return 'vendor-react'
           }
 
-          if (id.includes('@mantine')) {
-            return 'vendor-mantine'
-          }
-
-          if (id.includes('@tanstack')) {
-            return 'vendor-router'
-          }
-
-          if (id.includes('i18next') || id.includes('react-i18next')) {
-            return 'vendor-i18n'
-          }
-
-          if (id.includes('react-icons')) {
-            return 'vendor-icons'
-          }
-
           return undefined
         },
       },

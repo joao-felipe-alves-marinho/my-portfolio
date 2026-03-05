@@ -81,8 +81,8 @@ src/
 ```bash
 git clone <url-do-repositorio>
 cd protifolio
-npm install
-npm run dev
+yarn install
+yarn dev
 ```
 
 Aplicação disponível em `http://localhost:5173`.

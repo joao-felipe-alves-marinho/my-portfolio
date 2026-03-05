@@ -41,7 +41,7 @@ export function SiteHeader({ opened, onToggle }: SiteHeaderProps) {
           </Link>
         </Group>
 
-        <Group component="nav" justify="center">
+        <Group component="nav" justify="center" aria-label={t('accessibility.primaryNavigation')}>
           <Link to="/" hash="about-me">
             {t('header.aboutMe')}
           </Link>

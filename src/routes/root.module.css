@@ -1,0 +1,25 @@
+.skipLink {
+  position: absolute;
+  top: var(--mantine-spacing-sm);
+  left: var(--mantine-spacing-sm);
+  z-index: 1000;
+  padding: var(--mantine-spacing-xs) var(--mantine-spacing-sm);
+  border-radius: var(--mantine-radius-sm);
+  color: var(--mantine-color-text);
+  background: var(--mantine-color-body);
+  border: 2px solid var(--mantine-primary-color-filled);
+  text-decoration: none;
+  transform: translateY(-200%);
+}
+
+.skipLink:focus-visible {
+  transform: translateY(0);
+}
+
+@media (forced-colors: active) {
+  .skipLink {
+    color: CanvasText;
+    background: Canvas;
+    border-color: ButtonBorder;
+  }
+}
