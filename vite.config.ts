@@ -19,6 +19,14 @@ export default defineConfig({
           if (id.includes('react-dom') || id.includes('/react/')) {
             return 'vendor-react'
           }
+           
+           if (id.includes('@mantine')) {
+             return 'vendor-mantine'
+           }
+           
+           if (id.includes('@tanstack')) {
+             return 'vendor-router'
+           }
 
           return undefined
         },
