@@ -1,6 +1,7 @@
 import '@mantine/core/styles.css';
 import { MantineProvider } from '@mantine/core';
 import { createRouter, RouterProvider } from '@tanstack/react-router';
+import { Analytics } from '@vercel/analytics/react';
 import { routeTree } from './routeTree.gen';
 import './i18n/index.ts';
 
@@ -26,6 +27,7 @@ export default function App() {
       }}
     >
       <RouterProvider router={router} />
+      <Analytics />
     </MantineProvider>
   )
 }

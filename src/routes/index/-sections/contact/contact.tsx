@@ -1,5 +1,5 @@
 import { Box, Button, Container, Divider, Group, Stack, Text, Title } from '@mantine/core'
-import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa6'
+import { FaLinkedin, FaGithub, FaEnvelope, FaFileArrowDown } from 'react-icons/fa6'
 import { useTranslation } from 'react-i18next'
 
 const EMAIL = 'joao.felipe.alves.marinho@gmail.com'
@@ -30,6 +30,17 @@ export function ContactSection() {
               leftSection={<FaEnvelope size={20} />}
             >
               {t('contact.emailButton')}
+            </Button>
+
+            <Button
+              component="a"
+              href="/joao-marinho.pdf"
+              download="joao-marinho.pdf"
+              size="lg"
+              variant="light"
+              leftSection={<FaFileArrowDown size={20} />}
+            >
+              {t('contact.resumeButton')}
             </Button>
 
             <Group gap="md" justify="center">

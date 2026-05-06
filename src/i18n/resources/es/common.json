@@ -35,8 +35,9 @@
   },
   "technologies": {
     "title": "Tecnologías",
-    "description": "Dominio técnico organizado por áreas para diseñar, construir y evolucionar sistemas de forma consistente.",
+    "description": "Principales herramientas y patrones usados en el proyecto ticket-ddh-es, organizados por capa.",
     "frontend": "Frontend",
+    "architecture": "Arquitectura",
     "backend": "Backend",
     "data": "Datos",
     "quality": "Calidad",
@@ -46,7 +47,7 @@
     "itemI18n": "Internacionalización (i18next)",
     "itemRestApi": "APIs REST",
     "itemDataModeling": "Modelado de base de datos",
-    "itemAutomatedTests": "Pruebas automatizadas (Pytest)",
+    "itemAutomatedTests": "Pruebas automatizadas (Pytest, Jest)",
     "itemCodeOrganization": "Organización de código",
     "itemAutoDocs": "Documentación automática"
   },
@@ -54,6 +55,7 @@
     "title": "Contacto",
     "description": "¿Listo para conversar? Elige tu forma preferida de contacto abajo.",
     "emailButton": "Enviar correo",
+    "resumeButton": "Descargar CV",
     "linkedin": "LinkedIn",
     "github": "GitHub"
   },

@@ -35,8 +35,9 @@
   },
   "technologies": {
     "title": "Technologies",
-    "description": "Technical expertise organized by areas to design, build, and evolve systems consistently.",
+    "description": "Main tools and patterns used in the ticket-ddh-es project, organized by layer.",
     "frontend": "Frontend",
+    "architecture": "Architecture",
     "backend": "Backend",
     "data": "Data",
     "quality": "Quality",
@@ -46,7 +47,7 @@
     "itemI18n": "Internationalization (i18next)",
     "itemRestApi": "REST APIs",
     "itemDataModeling": "Database modeling",
-    "itemAutomatedTests": "Automated tests (Pytest)",
+    "itemAutomatedTests": "Automated tests (Pytest, Jest)",
     "itemCodeOrganization": "Code organization",
     "itemAutoDocs": "Automatic documentation"
   },
@@ -54,6 +55,7 @@
     "title": "Contact",
     "description": "Ready to chat? Choose your preferred way to contact below.",
     "emailButton": "Send Email",
+    "resumeButton": "Download Resume",
     "linkedin": "LinkedIn",
     "github": "GitHub"
   },

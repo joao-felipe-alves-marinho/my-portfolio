@@ -27,10 +27,10 @@ export function TechnologiesSection() {
     {
       title: t('technologies.frontend'),
       items: [
-        'TypeScript',
         'React',
         'Vite',
-        'Vue',
+        'Next.js',
+        'TypeScript',
         t('technologies.itemArchitecture'),
         t('technologies.itemUiLibraries'),
         t('technologies.itemI18n'),
@@ -40,20 +40,22 @@ export function TechnologiesSection() {
       title: t('technologies.backend'),
       items: [
         'Python',
-        'Flask',
-        'Django / Django Ninja',
+        'Node.js',
         t('technologies.itemRestApi'),
         'JWT',
         'Swagger / OpenAPI',
-        'ORMs',
+        'NestJS',
+        'TypeScript',
       ],
     },
     {
-      title: t('technologies.data'),
+      title: t('technologies.architecture'),
       items: [
-        'PostgreSQL',
-        'MySQL',
-        t('technologies.itemDataModeling'),
+        'Event Sourcing',
+        'CQRS',
+        'Layered Architecture',
+        'Hexagonal Architecture',
+        'Clean Architecture',
       ],
     },
     {
@@ -62,15 +64,25 @@ export function TechnologiesSection() {
         t('technologies.itemAutomatedTests'),
         'TDD / BDD',
         t('technologies.itemCodeOrganization'),
-        t('technologies.itemAutoDocs'),
+      ],
+    },
+    {
+      title: t('technologies.data'),
+      items: [
+        'PostgreSQL',
+        'MySQL',
+        t('technologies.itemDataModeling'),
+        'KurrentDB',
+        'MongoDB',
       ],
     },
     {
       title: t('technologies.devops'),
       items: [
-        'Docker',
         'Git / GitHub',
         'Scrum',
+        'Docker',
+        'Docker Compose',
       ],
     },
   ]
